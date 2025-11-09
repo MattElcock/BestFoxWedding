@@ -25,10 +25,23 @@ const YouAreInvited = () => {
   );
 };
 
+const WeddingTitle = () => {
+  return (
+    <div className="wedding-title">
+      <h2>
+        <span>The wedding of</span>
+        ANTHONY FOX & <br />
+        LLOYD BEST
+      </h2>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
-    <div>
+    <div className="page-container">
       <YouAreInvited />
+      <WeddingTitle />
     </div>
   );
 }
