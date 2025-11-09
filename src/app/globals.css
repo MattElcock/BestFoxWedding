@@ -1,9 +1,12 @@
 :root {
+  --color-primary: #9b1b30;
   --color-secondary: #c6a664;
+  --text-light: #f5e9cf;
 }
 
 html,
 body {
+  position: relative;
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #0b0c10;
@@ -17,8 +20,35 @@ body::before {
   background-repeat: repeat;
   background-position: center;
   opacity: 0.25;
+  pointer-events: none;
 }
 
 .container {
+  position: relative;
   margin: 1rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-light);
+  font-size: 24px;
+  font-family: var(--font-federo);
+  padding: 0 1rem;
+}
+
+button:has(svg) {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(0.75);
 }

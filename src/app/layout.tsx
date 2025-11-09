@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./reset.css";
-import { Limelight, Dancing_Script } from "next/font/google";
+import { Limelight, Dancing_Script, Federo } from "next/font/google";
 
 const limelight = Limelight({
   subsets: ["latin"],
@@ -13,6 +13,12 @@ const dancingScript = Dancing_Script({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-dancing-script",
+});
+
+const federo = Federo({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-federo",
 });
 
 export const metadata: Metadata = {
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${limelight.variable} ${dancingScript.variable}`}
+      className={`${limelight.variable} ${dancingScript.variable} ${federo.variable}`}
     >
       <body>
         <div className="container">

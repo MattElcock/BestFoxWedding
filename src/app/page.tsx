@@ -1,5 +1,6 @@
 import Image from "next/image";
 import "./page.css";
+import { Ticket } from "lucide-react";
 
 const YouAreInvited = () => {
   return (
@@ -49,12 +50,24 @@ const WeddingDate = () => {
   );
 };
 
+const Buttons = () => {
+  return (
+    <div className="button-container">
+      <button>
+        <Ticket />
+        RSVP
+      </button>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <div className="page-container">
       <YouAreInvited />
       <WeddingTitle />
       <WeddingDate />
+      <Buttons />
     </div>
   );
 }

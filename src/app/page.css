@@ -62,3 +62,7 @@
   line-height: 36px;
   text-align: center;
 }
+
+.button-container {
+  width: 100%;
+}
