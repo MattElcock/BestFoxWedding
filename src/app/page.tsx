@@ -37,11 +37,24 @@ const WeddingTitle = () => {
   );
 };
 
+const WeddingDate = () => {
+  return (
+    <div className="wedding-date">
+      <p>
+        FRIDAY 28
+        <br />
+        APRIL 2028
+      </p>
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <div className="page-container">
       <YouAreInvited />
       <WeddingTitle />
+      <WeddingDate />
     </div>
   );
 }

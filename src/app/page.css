@@ -54,3 +54,10 @@
   display: block;
   font-family: var(--font-dancing-script);
 }
+
+.wedding-date {
+  color: var(--color-secondary);
+  font-size: 24px;
+  font-family: var(--font-limelight);
+  line-height: 36px;
+}
