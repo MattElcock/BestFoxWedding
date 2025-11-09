@@ -1,6 +1,7 @@
 :root {
   --color-primary: #9b1b30;
   --color-secondary: #c6a664;
+  --color-tertiary: #3e3a2d;
   --text-light: #f5e9cf;
 }
 
@@ -41,6 +42,10 @@ button {
   font-size: 24px;
   font-family: var(--font-federo);
   padding: 0 1rem;
+}
+
+button[data-variant="secondary"] {
+  background-color: var(--color-tertiary);
 }
 
 button:has(svg) {

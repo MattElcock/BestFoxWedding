@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "./page.css";
-import { Ticket } from "lucide-react";
+import { MapPin, Ticket } from "lucide-react";
 
 const YouAreInvited = () => {
   return (
@@ -56,6 +56,10 @@ const Buttons = () => {
       <button>
         <Ticket />
         RSVP
+      </button>
+      <button data-variant="secondary">
+        <MapPin />
+        The Temple of Peace
       </button>
     </div>
   );
