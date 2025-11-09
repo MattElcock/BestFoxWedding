@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./reset.css";
+import { Limelight, Dancing_Script } from "next/font/google";
+
+const limelight = Limelight({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-limelight",
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-dancing-script",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +26,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html
+      lang="en"
+      className={`${limelight.variable} ${dancingScript.variable}`}
+    >
+      <body>
+        <div className="container">
+          <main>{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
