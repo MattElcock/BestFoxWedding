@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./reset.css";
 import "./globals.css";
-import { Cinzel_Decorative, Dancing_Script, Federo } from "next/font/google";
+import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -15,10 +15,10 @@ const dancingScript = Dancing_Script({
   variable: "--font-dancing-script",
 });
 
-const federo = Federo({
+const roboto = Roboto({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-federo",
+  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cinzelDecorative.variable} ${dancingScript.variable} ${federo.variable}`}
+      className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
         <main>{children}</main>
