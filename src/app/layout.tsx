@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "./reset.css";
-import { Limelight, Dancing_Script, Federo } from "next/font/google";
+import "./globals.css";
+import { Cinzel_Decorative, Dancing_Script, Federo } from "next/font/google";
 
-const limelight = Limelight({
+const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-limelight",
+  variable: "--font-cinzel-decorative",
 });
 
 const dancingScript = Dancing_Script({
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${limelight.variable} ${dancingScript.variable} ${federo.variable}`}
+      className={`${cinzelDecorative.variable} ${dancingScript.variable} ${federo.variable}`}
     >
       <body>
         <div className="container">

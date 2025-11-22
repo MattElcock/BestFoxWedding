@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #9b1b30;
-  --color-secondary: #c6a664;
-  --color-tertiary: #3e3a2d;
-  --text-light: #f5e9cf;
+  --color-primary: #0a6f55;
+  --color-secondary: #c9a86a;
+  --color-tertiary: #5e1a1c;
+  --text-light: #f2d7a6;
 }
 
 html,
@@ -11,6 +11,8 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background-color: #0b0c10;
+  color: var(--color-secondary);
+  font-family: var(--font-cinzel-decorative);
 }
 
 body::before,
@@ -20,7 +22,7 @@ body::after {
   inset: 0;
   background-image: url("/images/fan.svg");
   background-repeat: repeat;
-  opacity: 0.25;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -49,7 +51,6 @@ button {
   border-radius: 5px;
   color: var(--text-light);
   font-size: 24px;
-  font-family: var(--font-federo);
   padding: 0 1rem;
 }
 
