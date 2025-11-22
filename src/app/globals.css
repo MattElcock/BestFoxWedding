@@ -5,6 +5,10 @@
   --text-light: #e8e8e8;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   position: relative;
@@ -37,7 +41,7 @@ body::after {
 
 main {
   position: relative;
-  margin: 1rem;
+  padding: 1rem;
   z-index: 1;
 }
 
