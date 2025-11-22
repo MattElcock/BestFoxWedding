@@ -1,33 +1,6 @@
 import Image from "next/image";
 import "./page.css";
-import { MapPin, Ticket } from "lucide-react";
-
-const YouAreInvited = () => {
-  return (
-    <div>
-      <Image
-        width={50}
-        height={50}
-        src="/images/cats.svg"
-        alt="Art Deco Cats"
-      />
-      <h1>
-        <span>Hello gorgeous</span>
-        YOU'RE INVITED
-      </h1>
-    </div>
-  );
-};
-
-const WeddingDate = () => {
-  return (
-    <p>
-      FRIDAY 28
-      <br />
-      APRIL 2028
-    </p>
-  );
-};
+import { Info, MapPin, Ticket } from "lucide-react";
 
 export default function Home() {
   return (
@@ -60,6 +33,10 @@ export default function Home() {
         <button data-variant="secondary">
           <MapPin />
           The Temple of Peace
+        </button>
+        <button data-variant="secondary">
+          <Info />
+          Information
         </button>
       </div>
     </div>
