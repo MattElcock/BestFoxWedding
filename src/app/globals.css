@@ -22,7 +22,7 @@ body::after {
   inset: 0;
   background-image: url("/images/fan.svg");
   background-repeat: repeat;
-  opacity: 0.2;
+  opacity: 0.28;
   pointer-events: none;
 }
 
