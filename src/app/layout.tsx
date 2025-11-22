@@ -37,9 +37,7 @@ export default function RootLayout({
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${federo.variable}`}
     >
       <body>
-        <div className="container">
-          <main>{children}</main>
-        </div>
+        <main>{children}</main>
       </body>
     </html>
   );

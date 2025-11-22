@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #0a6f55;
+  --color-primary: #347c2c;
   --color-secondary: #c9a86a;
   --color-tertiary: #9e4200;
   --text-light: #e8e8e8;
@@ -9,6 +9,7 @@ html,
 body {
   position: relative;
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
   background-color: #0b0c10;
   color: var(--color-secondary);
@@ -34,7 +35,7 @@ body::after {
   background-position: 50px 50px;
 }
 
-.container {
+main {
   position: relative;
   margin: 1rem;
   z-index: 1;

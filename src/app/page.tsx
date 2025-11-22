@@ -4,7 +4,7 @@ import { Info, MapPin, Ticket } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="page-container">
+    <>
       <h1>
         <Image
           width={60}
@@ -39,6 +39,6 @@ export default function Home() {
           Information
         </button>
       </div>
-    </div>
+    </>
   );
 }
