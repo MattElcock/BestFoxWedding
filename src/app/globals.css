@@ -67,7 +67,8 @@ a {
   color: var(--color-tertiary);
 }
 
-p {
+p,
+address {
   margin-bottom: 1rem;
 }
 

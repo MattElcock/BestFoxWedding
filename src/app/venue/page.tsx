@@ -40,8 +40,8 @@ export default function venue() {
           referrerPolicy="no-referrer"
         >
           Welsh National Memorial Association
-        </a>
-        , worked to eradicate tuberculosis in Wales. In the Peace Wing, the{" "}
+        </a>{" "}
+        helped eradicate tuberculosis in Wales. In the Peace Wing, the{" "}
         <a
           href="https://www.wcia.org.uk/wlnu/"
           target="_blank"
@@ -74,6 +74,17 @@ export default function venue() {
         </a>
       </p>
       <h2>Getting Here</h2>
+      <address>
+        Temple of Peace, <br />
+        King Edward VII Ave, <br />
+        Cardiff CF10 3AP
+      </address>
+      <iframe
+        width="100%"
+        height="350"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-3.185099065303803%2C51.48630862889905%2C-3.182100355625153%2C51.48833789609336&amp;layer=mapnik&amp;marker=51.487323273785435%2C-3.1835997104644775"
+      ></iframe>
+      <br />
     </>
   );
 }
