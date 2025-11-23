@@ -248,6 +248,39 @@ export default function venue() {
           </a>
         </dd>
       </dl>
+      <h3>Train Stations</h3>
+      <dl>
+        <dt>
+          <a
+            href="https://maps.app.goo.gl/ZJWzSWUkn2wSK1kL6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cathays
+          </a>
+        </dt>
+        <dd>10 min walk.</dd>
+        <dt>
+          <a
+            href="https://maps.app.goo.gl/b4m6yKhCGWRVbbms8"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cardiff Queen Street
+          </a>
+        </dt>
+        <dd>20 min walk.</dd>
+        <dt>
+          <a
+            href="https://maps.app.goo.gl/zA8GVnrVnc49raCQA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Cardiff Central
+          </a>
+        </dt>
+        <dd>25 min walk.</dd>
+      </dl>
     </>
   );
 }
