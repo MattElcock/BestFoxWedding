@@ -20,28 +20,33 @@ body {
   font-family: var(--font-roboto);
 }
 
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("/images/fan.svg");
-  background-repeat: repeat;
-  opacity: 0.28;
-  pointer-events: none;
-}
-
-body::before {
-  background-position: 0 0;
-}
-
-body::after {
-  background-position: 50px 50px;
-}
-
 main {
   position: relative;
   padding: 1rem;
+  z-index: 0;
+}
+
+main::before,
+main::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/fan.svg");
+  background-repeat: repeat;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+main::before {
+  background-position: 0 0;
+}
+
+main::after {
+  background-position: 50px 50px;
+}
+
+main > .page {
+  position: relative;
   z-index: 1;
 }
 

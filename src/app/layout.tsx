@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./reset.css";
 import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
+import { Header } from "@/components/header/header";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -37,7 +38,10 @@ export default function RootLayout({
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
-        <main>{children}</main>
+        <Header />
+        <main>
+          <div className="page">{children}</div>
+        </main>
       </body>
     </html>
   );
