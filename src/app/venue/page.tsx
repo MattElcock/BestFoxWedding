@@ -82,9 +82,12 @@ export default function venue() {
         CF10 3AP
       </address>
       <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.409266361554!2d-3.185816122267925!3d51.48735537180872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486e1ca4a941a82b%3A0xb09635af119309c0!2sTemple%20of%20Peace!5e0!3m2!1sen!2suk!4v1768059457111!5m2!1sen!2suk"
         width="100%"
-        height="350"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-3.185099065303803%2C51.48630862889905%2C-3.182100355625153%2C51.48833789609336&amp;layer=mapnik&amp;marker=51.487323273785435%2C-3.1835997104644775"
+        height="400"
+        style={{ border: "0" }}
+        allowFullScreen
+        loading="lazy"
       ></iframe>
       <h3>Parking</h3>
       <dl>
