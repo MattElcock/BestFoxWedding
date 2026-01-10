@@ -313,7 +313,7 @@ export default function venue() {
         >
           College Road RK on North Road
         </a>
-        . Dowload the{" "}
+        . Download the{" "}
         <a href="https://www.cardiffbus.com/app">Cardiff Bus app</a> or use the{" "}
         <a
           href="https://www.cardiffbus.com/plan-a-journey"

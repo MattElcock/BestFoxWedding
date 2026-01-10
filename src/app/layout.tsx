@@ -3,6 +3,7 @@ import "./reset.css";
 import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
 import { Header } from "@/components/header/header";
+import { Analytics } from "@vercel/analytics/next";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
         <main>
           <div className="page">{children}</div>
         </main>
+        <Analytics />
       </body>
     </html>
   );
