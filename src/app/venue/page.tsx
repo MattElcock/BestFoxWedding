@@ -303,7 +303,7 @@ export default function venue() {
         </dt>
         <dd>25 min walk.</dd>
       </dl>
-      <h3>Busses and Coaches</h3>
+      <h3>Buses and Coaches</h3>
       <p>
         There are several bus stops near the venue. The closest is{" "}
         <a
