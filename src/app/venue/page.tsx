@@ -249,6 +249,25 @@ export default function venue() {
         </dd>
       </dl>
       <h3>Train Stations</h3>
+      <p>
+        Download the{" "}
+        <a
+          href="https://tfw.wales/ways-to-travel/rail/buy-tickets/app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Transport for Wales (TfW) App
+        </a>{" "}
+        or use the{" "}
+        <a
+          href="https://tfw.wales/plan-a-journey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          TfW website
+        </a>{" "}
+        to plan your journey, buy tickets and check train times.
+      </p>
       <dl>
         <dt>
           <a
@@ -281,6 +300,34 @@ export default function venue() {
         </dt>
         <dd>25 min walk.</dd>
       </dl>
+      <h3>Busses and Coaches</h3>
+      <p>
+        There are several bus stops near the venue. The closest is{" "}
+        <a
+          href="https://www.cardiffbus.com/stops/5710AWA11117"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          College Road RK on North Road
+        </a>
+        . Dowload the{" "}
+        <a href="https://www.cardiffbus.com/app">Cardiff Bus app</a> or use the{" "}
+        <a
+          href="https://www.cardiffbus.com/plan-a-journey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Cardiff Bus website
+        </a>{" "}
+        to plan your journey, buy tickets and check bus times.
+      </p>
+      <p>The nearest coach station is:</p>
+      <address>
+        Cardiff Coach Station <br />
+        Sophia Gardsens <br />
+        Cardiff <br />
+        CF11 9HW
+      </address>
     </>
   );
 }
