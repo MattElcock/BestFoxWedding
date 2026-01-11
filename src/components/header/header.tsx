@@ -1,17 +1,9 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 import "./header.css";
-import { usePathname } from "next/navigation";
+import { LogOut } from "lucide-react";
 
 const Header = () => {
-  const pathname = usePathname();
-
-  if (pathname === "/") {
-    return null;
-  }
-
   return (
     <header>
       <Link href="/" className="site-title">
@@ -26,6 +18,9 @@ const Header = () => {
           <p>Anthony and Lloyd</p>
         </div>
       </Link>
+      <a href="/auth/logout" aria-label="Log Out">
+        <LogOut />
+      </a>
     </header>
   );
 };

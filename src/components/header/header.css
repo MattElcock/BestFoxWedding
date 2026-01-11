@@ -1,28 +1,30 @@
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #000000;
   width: 100%;
   padding: 1rem;
-}
 
-header {
-  display: flex;
-}
+  a {
+    color: var(--color-secondary);
+    text-decoration: none;
+  }
 
-.site-title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--color-secondary);
-  text-decoration: none;
-}
+  .site-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
 
-.site-title > div > p:first-child {
-  margin: 0;
-  font-family: var(--font-dancing-script);
-}
+    p:first-child {
+      margin: 0;
+      font-family: var(--font-dancing-script);
+    }
 
-.site-title > div > p:last-child {
-  margin: 0;
-  font-family: var(--font-cinzel-decorative);
+    p:last-child {
+      margin: 0;
+      font-family: var(--font-cinzel-decorative);
+    }
+  }
 }

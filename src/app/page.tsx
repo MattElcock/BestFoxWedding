@@ -2,8 +2,16 @@ import Image from "next/image";
 import "./page.css";
 import { Info, MapPin, Ticket } from "lucide-react";
 import Link from "next/link";
+import { auth0 } from "@/lib/auth0";
 
-export default function Home() {
+export default async function Home() {
+  const session = await auth0.getSession();
+  const user = session?.user;
+
+  if (!user) {
+    return <a href="/auth/login">Log In</a>;
+  }
+
   return (
     <div className="page-home">
       <h1>
