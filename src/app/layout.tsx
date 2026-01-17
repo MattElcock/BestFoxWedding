@@ -4,8 +4,6 @@ import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
 import { Header } from "@/components/header/header";
 import { Analytics } from "@vercel/analytics/next";
-import { auth0 } from "@/lib/auth0";
-import { redirect } from "next/navigation";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -32,16 +30,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const session = await auth0.getSession();
-  const user = session?.user;
-
-  if (!user) {
-    redirect("/auth/login");
-  }
-
+}: React.PropsWithChildren<{}>) {
   return (
     <html
       lang="en"

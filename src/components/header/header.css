@@ -7,7 +7,7 @@ header {
   padding: 1rem;
 
   a {
-    color: var(--color-secondary);
+    color: var(--color-tertiary);
     text-decoration: none;
   }
 

@@ -27,22 +27,16 @@ export default async function Home() {
         <time dateTime="2028-04-28">Friday 28 April 2028</time>
       </p>
       <div className="button-container">
-        <button>
-          <Ticket />
+        <Link href="/rsvp" className="button">
           RSVP
-        </button>
-        <Link href="/venue">
-          <button data-variant="secondary">
-            <MapPin />
-            The Temple of Peace
-          </button>
         </Link>
 
-        <Link href="/information">
-          <button data-variant="secondary">
-            <Info />
-            Information
-          </button>
+        <Link href="/venue" className="button button-secondary">
+          Venue
+        </Link>
+
+        <Link href="/information" className="button button-secondary">
+          Information
         </Link>
       </div>
     </div>
