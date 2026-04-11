@@ -107,7 +107,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -127,7 +127,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -147,7 +147,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -167,7 +167,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -187,7 +187,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -207,7 +207,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -227,7 +227,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
 
@@ -247,7 +247,7 @@ export default function venue() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Tariffs
+            Prices
           </a>
         </dd>
       </dl>
