@@ -42,10 +42,24 @@
     width: 100%;
   }
 
-  @media screen and (min-width: 992px) {
-    width: 40rem;
+  a {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page-home {
+    width: 35rem;
     margin: 0 auto;
     border: 10px double var(--color-secondary);
-    padding: 5rem;
+    padding: 2rem 3rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
   }
 }

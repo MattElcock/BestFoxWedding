@@ -9,22 +9,6 @@ header {
   a {
     color: var(--color-secondary);
     text-decoration: none;
-  }
-
-  .site-title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
-
-    p:first-child {
-      margin: 0;
-      font-family: var(--font-dancing-script);
-    }
-
-    p:last-child {
-      margin: 0;
-      font-family: var(--font-cinzel-decorative);
-    }
+    font-family: var(--font-cinzel-decorative);
   }
 }
