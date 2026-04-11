@@ -1,6 +1,5 @@
 import Image from "next/image";
 import "./page.css";
-import { Info, MapPin, Ticket } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home() {
