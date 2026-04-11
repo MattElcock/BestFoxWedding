@@ -41,4 +41,11 @@
     gap: 1rem;
     width: 100%;
   }
+
+  @media screen and (min-width: 992px) {
+    width: 40rem;
+    margin: 0 auto;
+    border: 10px double var(--color-secondary);
+    padding: 5rem;
+  }
 }

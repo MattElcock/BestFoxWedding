@@ -1,22 +1,16 @@
 import Image from "next/image";
+import "./page.css";
 
 export default function venue() {
   return (
     <>
-      <div
-        style={{
-          width: "100vw",
-          margin: "-1rem -1rem 1rem -1rem",
-        }}
-      >
-        <Image
-          src="/images/temple-of-peace.jpg"
-          alt="Temple of Peace"
-          width={1080}
-          height={753}
-          style={{ width: "100%", height: "auto" }}
-        />
-      </div>
+      <Image
+        className="venue-image"
+        src="/images/temple-of-peace.jpg"
+        alt="Temple of Peace"
+        width={1080}
+        height={753}
+      />
       <h1>The Temple of Peace</h1>
       <p>
         Built in 1938, the Temple of Peace is a memorial to those who died in
