@@ -8,6 +8,10 @@ const LocaleSwitcher = () => {
   const locale = useLocale();
   const pathname = usePathname();
 
+  if (pathname === "/choose-locale") {
+    return null;
+  }
+
   return locale === "en" ? (
     <Link href={pathname} locale="cy">
       {t("common.cymraeg")}
