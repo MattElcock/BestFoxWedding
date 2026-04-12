@@ -4,6 +4,20 @@ import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
 import { Header } from "@/components/header/header";
 import { Analytics } from "@vercel/analytics/next";
+import {
+  initServerI18next,
+  getT,
+  getResources,
+  generateI18nStaticParams,
+} from "next-i18next/server";
+import { I18nProvider } from "next-i18next/client";
+import i18nConfig from "../../i18n.config";
+
+initServerI18next(i18nConfig);
+
+export async function generateStaticParams() {
+  return generateI18nStaticParams();
+}
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -30,18 +44,28 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-}: React.PropsWithChildren<{}>) {
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ lng: string }>;
+}) {
+  const { lng } = await params;
+  const { i18n } = await getT();
+  const resources = getResources(i18n);
+
   return (
     <html
       lang="en"
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
-        <Header />
-        <main>
-          <div>{children}</div>
-        </main>
-        <Analytics />
+        <I18nProvider language={lng} resources={resources}>
+          <Header />
+          <main>
+            <div>{children}</div>
+          </main>
+          <Analytics />
+        </I18nProvider>
       </body>
     </html>
   );
