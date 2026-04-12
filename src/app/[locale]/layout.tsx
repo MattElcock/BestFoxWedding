@@ -2,9 +2,11 @@ import type { Metadata } from "next";
 import "./reset.css";
 import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
-import { Header } from "@/components/header/header";
 import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher/LocaleSwitcher";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -30,16 +32,25 @@ export const metadata: Metadata = {
 };
 
 export default async function RootLayout({
+  params,
   children,
-}: React.PropsWithChildren<{}>) {
+}: React.PropsWithChildren<{ params: { locale: string } }>) {
+  const t = await getTranslations();
+  const { locale } = await params;
+
   return (
     <html
-      lang="en"
+      lang={locale}
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
         <NextIntlClientProvider>
-          <Header />
+          <header>
+            <Link href="/" className="site-title">
+              {t("common.anthony-and-lloyd")}
+            </Link>
+            <LocaleSwitcher />
+          </header>
           <main>
             <div>{children}</div>
           </main>

@@ -26,6 +26,24 @@ body {
   font-family: var(--font-roboto);
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  width: 100%;
+  padding: 1rem;
+
+  a {
+    color: var(--color-secondary);
+    font-family: var(--font-cinzel-decorative);
+  }
+
+  a:first-child {
+    text-decoration: none;
+  }
+}
+
 main {
   position: relative;
   padding: 1rem;

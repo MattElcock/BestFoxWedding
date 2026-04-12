@@ -6,7 +6,9 @@
     "wedding-date": "Friday 28 April 2028",
     "rsvp": "RSVP",
     "venue": "Venue",
-    "information": "Information"
+    "information": "Information",
+    "english": "English",
+    "cymraeg": "Cymraeg"
   },
   "home": {
     "hello-gorgeous": "Hello gorgeous",
