@@ -209,6 +209,47 @@
     "@eslint/core" "^0.17.0"
     levn "^0.4.1"
 
+"@formatjs/bigdecimal@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.npmjs.org/@formatjs/bigdecimal/-/bigdecimal-0.2.0.tgz"
+  integrity sha512-GeaxHZbUoYvHL9tC5eltHLs+1zU70aPw0s7LwqgktIzF5oMhNY4o4deEtusJMsq7WFJF3Ye2zQEzdG8beVk73w==
+
+"@formatjs/ecma402-abstract@3.2.0":
+  version "3.2.0"
+  resolved "https://registry.npmjs.org/@formatjs/ecma402-abstract/-/ecma402-abstract-3.2.0.tgz"
+  integrity sha512-dHnqHgBo6GXYGRsepaE1wmsC2etaivOWd5VaJstZd+HI2zR3DCUjbDVZRtoPGkkXZmyHvBwrdEUuqfvzhF/DtQ==
+  dependencies:
+    "@formatjs/bigdecimal" "0.2.0"
+    "@formatjs/fast-memoize" "3.1.1"
+    "@formatjs/intl-localematcher" "0.8.2"
+
+"@formatjs/fast-memoize@^3.1.0", "@formatjs/fast-memoize@3.1.1":
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/@formatjs/fast-memoize/-/fast-memoize-3.1.1.tgz"
+  integrity sha512-CbNbf+tlJn1baRnPkNePnBqTLxGliG6DDgNa/UtV66abwIjwsliPMOt0172tzxABYzSuxZBZfcp//qI8AvBWPg==
+
+"@formatjs/icu-messageformat-parser@^3.4.0", "@formatjs/icu-messageformat-parser@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.npmjs.org/@formatjs/icu-messageformat-parser/-/icu-messageformat-parser-3.5.3.tgz"
+  integrity sha512-HJWZ9S6JWey6iY5+YXE3Kd0ofWU1sC2KTTp56e1168g/xxWvVvr8k9G4fexIgwYV9wbtjY7kGYK5FjoWB3B2OQ==
+  dependencies:
+    "@formatjs/ecma402-abstract" "3.2.0"
+    "@formatjs/icu-skeleton-parser" "2.1.3"
+
+"@formatjs/icu-skeleton-parser@2.1.3":
+  version "2.1.3"
+  resolved "https://registry.npmjs.org/@formatjs/icu-skeleton-parser/-/icu-skeleton-parser-2.1.3.tgz"
+  integrity sha512-9mFp8TJ166ZM2pcjKwsBWXrDnOJGT7vMEScVgLygUODPOsE8S6f/FHoacvrlHK1B4dYZk8vSCNruyPU64AfgJQ==
+  dependencies:
+    "@formatjs/ecma402-abstract" "3.2.0"
+
+"@formatjs/intl-localematcher@^0.8.1", "@formatjs/intl-localematcher@0.8.2":
+  version "0.8.2"
+  resolved "https://registry.npmjs.org/@formatjs/intl-localematcher/-/intl-localematcher-0.8.2.tgz"
+  integrity sha512-q05KMYGJLyqFNFtIb8NhWLF5X3aK/k0wYt7dnRFuy6aLQL+vUwQ1cg5cO4qawEiINybeCPXAWlprY2mSBjSXAQ==
+  dependencies:
+    "@formatjs/fast-memoize" "3.1.1"
+
 "@humanfs/core@^0.19.1":
   version "0.19.1"
   resolved "https://registry.npmjs.org/@humanfs/core/-/core-0.19.1.tgz"
@@ -319,10 +360,82 @@
   resolved "https://registry.npmjs.org/@nolyfill/is-core-module/-/is-core-module-1.0.39.tgz"
   integrity sha512-nn5ozdjYQpUCZlWGuxcJY/KpxkWQs4DcbMCmKojjyrYDEAGy4Ce19NN4v5MduafTwJlbKc99UA8YhSVqq9yPZA==
 
+"@parcel/watcher-win32-x64@2.5.6":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@parcel/watcher-win32-x64/-/watcher-win32-x64-2.5.6.tgz"
+  integrity sha512-hbQlYcCq5dlAX9Qx+kFb0FHue6vbjlf0FrNzSKdYK2APUf7tGfGxQCk2ihEREmbR6ZMc0MVAD5RIX/41gpUzTw==
+
+"@parcel/watcher@^2.4.1":
+  version "2.5.6"
+  resolved "https://registry.npmjs.org/@parcel/watcher/-/watcher-2.5.6.tgz"
+  integrity sha512-tmmZ3lQxAe/k/+rNnXQRawJ4NjxO2hqiOLTHvWchtGZULp4RyFeh6aU4XdOYBFe2KE1oShQTv4AblOs2iOrNnQ==
+  dependencies:
+    detect-libc "^2.0.3"
+    is-glob "^4.0.3"
+    node-addon-api "^7.0.0"
+    picomatch "^4.0.3"
+  optionalDependencies:
+    "@parcel/watcher-android-arm64" "2.5.6"
+    "@parcel/watcher-darwin-arm64" "2.5.6"
+    "@parcel/watcher-darwin-x64" "2.5.6"
+    "@parcel/watcher-freebsd-x64" "2.5.6"
+    "@parcel/watcher-linux-arm-glibc" "2.5.6"
+    "@parcel/watcher-linux-arm-musl" "2.5.6"
+    "@parcel/watcher-linux-arm64-glibc" "2.5.6"
+    "@parcel/watcher-linux-arm64-musl" "2.5.6"
+    "@parcel/watcher-linux-x64-glibc" "2.5.6"
+    "@parcel/watcher-linux-x64-musl" "2.5.6"
+    "@parcel/watcher-win32-arm64" "2.5.6"
+    "@parcel/watcher-win32-ia32" "2.5.6"
+    "@parcel/watcher-win32-x64" "2.5.6"
+
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
   resolved "https://registry.npmjs.org/@rtsao/scc/-/scc-1.1.0.tgz"
   integrity sha512-zt6OdqaDoOnJ1ZYsCYGt9YmWzDXl4vQdKTyJev62gFhRGKdx7mcT54V9KIjg+d2wi9EXsPvAPKe7i7WjfVWB8g==
+
+"@schummar/icu-type-parser@1.21.5":
+  version "1.21.5"
+  resolved "https://registry.npmjs.org/@schummar/icu-type-parser/-/icu-type-parser-1.21.5.tgz"
+  integrity sha512-bXHSaW5jRTmke9Vd0h5P7BtWZG9Znqb8gSDxZnxaGSJnGwPLDPfS+3g0BKzeWqzgZPsIVZkM7m2tbo18cm5HBw==
+
+"@swc/core-win32-x64-msvc@1.15.24":
+  version "1.15.24"
+  resolved "https://registry.npmjs.org/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.15.24.tgz"
+  integrity sha512-PR0PlTlPra2JbaDphrOAzm6s0v9rA0F17YzB+XbWD95B4g2cWcZY9LAeTa4xll70VLw9Jr7xBrlohqlQmelMFQ==
+
+"@swc/core@^1.15.2":
+  version "1.15.24"
+  resolved "https://registry.npmjs.org/@swc/core/-/core-1.15.24.tgz"
+  integrity sha512-5Hj8aNasue7yusUt8LGCUe/AjM7RMAce8ZoyDyiFwx7Al+GbYKL+yE7g4sJk8vEr1dKIkTRARkNIJENc4CjkBQ==
+  dependencies:
+    "@swc/counter" "^0.1.3"
+    "@swc/types" "^0.1.26"
+  optionalDependencies:
+    "@swc/core-darwin-arm64" "1.15.24"
+    "@swc/core-darwin-x64" "1.15.24"
+    "@swc/core-linux-arm-gnueabihf" "1.15.24"
+    "@swc/core-linux-arm64-gnu" "1.15.24"
+    "@swc/core-linux-arm64-musl" "1.15.24"
+    "@swc/core-linux-ppc64-gnu" "1.15.24"
+    "@swc/core-linux-s390x-gnu" "1.15.24"
+    "@swc/core-linux-x64-gnu" "1.15.24"
+    "@swc/core-linux-x64-musl" "1.15.24"
+    "@swc/core-win32-arm64-msvc" "1.15.24"
+    "@swc/core-win32-ia32-msvc" "1.15.24"
+    "@swc/core-win32-x64-msvc" "1.15.24"
+
+"@swc/counter@^0.1.3":
+  version "0.1.3"
+  resolved "https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz"
+  integrity sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==
+
+"@swc/helpers@>=0.5.17":
+  version "0.5.21"
+  resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.21.tgz"
+  integrity sha512-jI/VAmtdjB/RnI8GTnokyX7Ug8c+g+ffD6QRLa6XQewtnGyukKkKSk3wLTM3b5cjt1jNh9x0jfVlagdN2gDKQg==
+  dependencies:
+    tslib "^2.8.0"
 
 "@swc/helpers@0.5.15":
   version "0.5.15"
@@ -330,6 +443,13 @@
   integrity sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==
   dependencies:
     tslib "^2.8.0"
+
+"@swc/types@^0.1.26":
+  version "0.1.26"
+  resolved "https://registry.npmjs.org/@swc/types/-/types-0.1.26.tgz"
+  integrity sha512-lyMwd7WGgG79RS7EERZV3T8wMdmPq3xwyg+1nmAM64kIhx5yl+juO2PYIHb7vTiPgPCj8LYjsNV2T5wiQHUEaw==
+  dependencies:
+    "@swc/counter" "^0.1.3"
 
 "@types/estree@^1.0.6":
   version "1.0.8"
@@ -830,7 +950,7 @@ define-properties@^1.1.3, define-properties@^1.2.1:
     has-property-descriptors "^1.0.0"
     object-keys "^1.1.1"
 
-detect-libc@^2.1.2:
+detect-libc@^2.0.3, detect-libc@^2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/detect-libc/-/detect-libc-2.1.2.tgz"
   integrity sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==
@@ -1472,6 +1592,13 @@ hermes-parser@^0.25.1:
   dependencies:
     hermes-estree "0.25.1"
 
+icu-minify@^4.9.1:
+  version "4.9.1"
+  resolved "https://registry.npmjs.org/icu-minify/-/icu-minify-4.9.1.tgz"
+  integrity sha512-6NkfF9GHHFouqnz+wuiLjCWQiyxoEyJ5liUv4Jxxo/8wyhV7MY0L0iTEGDAVEa4aAD58WqTxFMa20S5nyMjwNw==
+  dependencies:
+    "@formatjs/icu-messageformat-parser" "^3.4.0"
+
 ignore@^5.2.0:
   version "5.3.2"
   resolved "https://registry.npmjs.org/ignore/-/ignore-5.3.2.tgz"
@@ -1503,6 +1630,15 @@ internal-slot@^1.1.0:
     es-errors "^1.3.0"
     hasown "^2.0.2"
     side-channel "^1.1.0"
+
+intl-messageformat@^11.1.0:
+  version "11.2.0"
+  resolved "https://registry.npmjs.org/intl-messageformat/-/intl-messageformat-11.2.0.tgz"
+  integrity sha512-IhghAA8n4KSlXuWKzYsWyWb82JoYTzShfyvdSF85oJPnNOjvv4kAo7S7Jtkm3/vJ53C7dQNRO+Gpnj3iWgTjBQ==
+  dependencies:
+    "@formatjs/ecma402-abstract" "3.2.0"
+    "@formatjs/fast-memoize" "3.1.1"
+    "@formatjs/icu-messageformat-parser" "3.5.3"
 
 is-array-buffer@^3.0.4, is-array-buffer@^3.0.5:
   version "3.0.5"
@@ -1885,7 +2021,31 @@ natural-compare@^1.4.0:
   resolved "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
-"next@>= 13", next@16.1.1:
+negotiator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/negotiator/-/negotiator-1.0.0.tgz"
+  integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
+
+next-intl-swc-plugin-extractor@^4.9.1:
+  version "4.9.1"
+  resolved "https://registry.npmjs.org/next-intl-swc-plugin-extractor/-/next-intl-swc-plugin-extractor-4.9.1.tgz"
+  integrity sha512-8whJJ6oxJz8JqkHarggmmuEDyXgC7nEnaPhZD91CJwEWW4xp0AST3Mw17YxvHyP2vAF3taWfFbs1maD+WWtz3w==
+
+next-intl@^4.9.1:
+  version "4.9.1"
+  resolved "https://registry.npmjs.org/next-intl/-/next-intl-4.9.1.tgz"
+  integrity sha512-N7ga0CjtYcdxNvaKNIi6eJ2mmatlHK5hp8rt0YO2Omoc1m0gean242/Ukdj6+gJNiReBVcYIjK0HZeNx7CV1ug==
+  dependencies:
+    "@formatjs/intl-localematcher" "^0.8.1"
+    "@parcel/watcher" "^2.4.1"
+    "@swc/core" "^1.15.2"
+    icu-minify "^4.9.1"
+    negotiator "^1.0.0"
+    next-intl-swc-plugin-extractor "^4.9.1"
+    po-parser "^2.1.1"
+    use-intl "^4.9.1"
+
+"next@^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0 || ^16.0.0", "next@>= 13", next@16.1.1:
   version "16.1.1"
   resolved "https://registry.npmjs.org/next/-/next-16.1.1.tgz"
   integrity sha512-QI+T7xrxt1pF6SQ/JYFz95ro/mg/1Znk5vBebsWwbpejj1T0A23hO7GYEaVac9QUOT2BIMiuzm0L99ooq7k0/w==
@@ -1906,6 +2066,11 @@ natural-compare@^1.4.0:
     "@next/swc-win32-arm64-msvc" "16.1.1"
     "@next/swc-win32-x64-msvc" "16.1.1"
     sharp "^0.34.4"
+
+node-addon-api@^7.0.0:
+  version "7.1.1"
+  resolved "https://registry.npmjs.org/node-addon-api/-/node-addon-api-7.1.1.tgz"
+  integrity sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==
 
 node-releases@^2.0.26:
   version "2.0.27"
@@ -2050,6 +2215,11 @@ picomatch@^2.3.1:
   resolved "https://registry.npmjs.org/picomatch/-/picomatch-4.0.3.tgz"
   integrity sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==
 
+po-parser@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/po-parser/-/po-parser-2.1.1.tgz"
+  integrity sha512-ECF4zHLbUItpUgE3OTtLKlPjeBN+fKEczj2zYjDfCGOzicNs0GK3Vg2IoAYwx7LH/XYw43fZQP6xnZ4TkNxSLQ==
+
 possible-typed-array-names@^1.0.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz"
@@ -2100,7 +2270,7 @@ react-is@^16.13.1:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.2.3, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", react@19.2.3:
+"react@^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0", "react@^17.0.0 || ^18.0.0 || >=19.0.0-rc <19.0.0 || ^19.0.0", "react@^18 || ^19 || ^19.0.0-rc", "react@^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0", react@^19.2.3, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0 || ^19.0.0-0", react@19.2.3:
   version "19.2.3"
   resolved "https://registry.npmjs.org/react/-/react-19.2.3.tgz"
   integrity sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==
@@ -2614,6 +2784,16 @@ uri-js@^4.2.2:
   integrity sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==
   dependencies:
     punycode "^2.1.0"
+
+use-intl@^4.9.1:
+  version "4.9.1"
+  resolved "https://registry.npmjs.org/use-intl/-/use-intl-4.9.1.tgz"
+  integrity sha512-iGVV/xFYlhe3btafRlL8RPLD2Jsuet4yqn9DR6LWWbMhULsJnXgLonDkzDmsAIBIwFtk02oJuX/Ox2vwHKF+UQ==
+  dependencies:
+    "@formatjs/fast-memoize" "^3.1.0"
+    "@schummar/icu-type-parser" "1.21.5"
+    icu-minify "^4.9.1"
+    intl-messageformat "^11.1.0"
 
 which-boxed-primitive@^1.1.0, which-boxed-primitive@^1.1.1:
   version "1.1.1"

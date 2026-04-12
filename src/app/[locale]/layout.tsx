@@ -4,6 +4,7 @@ import "./globals.css";
 import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
 import { Header } from "@/components/header/header";
 import { Analytics } from "@vercel/analytics/next";
+import { NextIntlClientProvider } from "next-intl";
 
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
@@ -37,11 +38,13 @@ export default async function RootLayout({
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
-        <Header />
-        <main>
-          <div>{children}</div>
-        </main>
-        <Analytics />
+        <NextIntlClientProvider>
+          <Header />
+          <main>
+            <div>{children}</div>
+          </main>
+          <Analytics />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

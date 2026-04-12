@@ -1,8 +1,10 @@
 import Image from "next/image";
 import "./page.css";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 
 export default async function Home() {
+  const t = await getTranslations();
   return (
     <div className="page-home">
       <h1>
@@ -13,29 +15,29 @@ export default async function Home() {
           alt="Art Deco Cats"
           style={{ marginBottom: "0.5rem" }}
         />
-        <span>Hello gorgeous</span>
-        YOU'RE INVITED
+        <span>{t("home.hello-gorgeous")}</span>
+        {t("home.you-are-invited")}
       </h1>
       <h2>
-        <span>The wedding of</span>
-        ANTHONY FOX
+        <span>{t("home.the-wedding-of")}</span>
+        {t("common.anthony-fox")}
         <br />&<br />
-        LLOYD BEST
+        {t("common.lloyd-best")}
       </h2>
       <p>
-        <time dateTime="2028-04-28">Friday 28 April 2028</time>
+        <time dateTime="2028-04-28">{t("common.wedding-date")}</time>
       </p>
       <div className="button-container">
         <Link href="/rsvp" className="button">
-          RSVP
+          {t("common.rsvp")}
         </Link>
 
         <Link href="/venue" className="button button-secondary">
-          Venue
+          {t("common.venue")}
         </Link>
 
         <Link href="/information" className="button button-secondary">
-          Information
+          {t("common.information")}
         </Link>
       </div>
     </div>

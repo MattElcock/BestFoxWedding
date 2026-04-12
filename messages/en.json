@@ -1,0 +1,16 @@
+{
+  "common": {
+    "anthony-and-lloyd": "Anthony and Lloyd",
+    "anthony-fox": "Anthony Fox",
+    "lloyd-best": "Lloyd Best",
+    "wedding-date": "Friday 28 April 2028",
+    "rsvp": "RSVP",
+    "venue": "Venue",
+    "information": "Information"
+  },
+  "home": {
+    "hello-gorgeous": "Hello gorgeous",
+    "you-are-invited": "You're invited",
+    "the-wedding-of": "The wedding of"
+  }
+}
