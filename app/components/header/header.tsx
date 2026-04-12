@@ -1,11 +1,14 @@
 import Link from "next/link";
 import "./header.css";
+import { getT } from "next-i18next/server";
 
-const Header = () => {
+const Header = async () => {
+  const { t } = await getT();
+
   return (
     <header>
       <Link href="/" className="site-title">
-        Anthony and Lloyd
+        {t("anthony-and-lloyd")}
       </Link>
     </header>
   );

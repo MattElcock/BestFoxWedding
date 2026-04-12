@@ -13,12 +13,6 @@ import {
 import { I18nProvider } from "next-i18next/client";
 import i18nConfig from "../../i18n.config";
 
-initServerI18next(i18nConfig);
-
-export async function generateStaticParams() {
-  return generateI18nStaticParams();
-}
-
 const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
   weight: "400",
@@ -36,6 +30,12 @@ const roboto = Roboto({
   weight: "400",
   variable: "--font-roboto",
 });
+
+initServerI18next(i18nConfig);
+
+export async function generateStaticParams() {
+  return generateI18nStaticParams();
+}
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -55,7 +55,7 @@ export default async function RootLayout({
 
   return (
     <html
-      lang="en"
+      lang={lng}
       className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
     >
       <body>
