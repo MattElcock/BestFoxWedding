@@ -71,15 +71,6 @@
   .page-home {
     width: 35rem;
     margin: 0 auto;
-    border: 10px double var(--color-secondary);
     padding: 2rem 3rem;
-
-    h1 {
-      font-size: 1.5rem;
-    }
-
-    h2 {
-      font-size: 2rem;
-    }
   }
 }
