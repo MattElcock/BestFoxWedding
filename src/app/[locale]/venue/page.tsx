@@ -1,5 +1,15 @@
 import Image from "next/image";
 import "./page.css";
+import {getTranslations} from "next-intl/server";
+import type {Metadata} from 'next'
+
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations();
+
+  return {
+    title: t("venue.title"),
+  }
+}
 
 export default function venue() {
   return (

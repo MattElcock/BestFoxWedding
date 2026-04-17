@@ -11,8 +11,15 @@
     "cymraeg": "Cymraeg"
   },
   "home": {
+    "title": "Cartref | Anthony a Lloyd",
     "hello-gorgeous": "Shwmae hardd",
     "you-are-invited": "Rydych chi wedi eich gwahodd",
     "the-wedding-of": "Priodas"
+  },
+  "venue": {
+    "title": "Lleoliad | Anthony a Lloyd"
+  },
+  "rsvp": {
+    "title": "RSVP | Anthony a Lloyd"
   }
 }
