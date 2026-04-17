@@ -4,7 +4,30 @@
   margin-bottom: 1rem;
   object-fit: cover;
 
-  @media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 992px) {
+  .venue-image {
     height: 400px;
+  }
+
+  dl {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+
+    dt {
+      margin-top: 0;
+    }
+
+
+    dt:nth-of-type(odd), dd:nth-of-type(odd) {
+      grid-column: 1;
+    }
+
+    dt:nth-of-type(even), dd:nth-of-type(even) {
+      grid-column: 2;
+    }
   }
 }
