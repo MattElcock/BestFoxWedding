@@ -1,11 +1,12 @@
 :root {
-  --color-white: #e6e1d6;
   --color-black: #0b0c10;
-  --color-gold: #c9a86a;
+  --color-white: #e6e1d6;
   --color-gold-light: #d6bd8f;
-  --color-burgendy: #662621;
+  --color-gold: #d3a970;
+  --color-purple: #51243a;
+  --color-dark-purple: #271319;
 
-  --color-primary: var(--color-burgendy);
+  --color-primary: var(--color-purple);
   --color-secondary: var(--color-gold);
   --color-text: var(--color-gold-light);
 }
@@ -21,7 +22,7 @@ body {
   max-width: 100vw;
   min-height: 100dvh;
   overflow-x: hidden;
-  background-color: var(--color-black);
+  background-color: var(--color-dark-purple);
   color: var(--color-text);
   font-family: var(--font-roboto);
 }
@@ -30,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: var(--color-black);
   width: 100%;
   padding: 1rem;
 
@@ -69,7 +70,7 @@ main::after {
   inset: 0;
   background-image: url("/images/fan.svg");
   background-repeat: repeat;
-  opacity: 0.3;
+  opacity: 0.1;
   pointer-events: none;
 }
 
