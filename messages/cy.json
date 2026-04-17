@@ -19,7 +19,9 @@
   "venue": {
     "links": {
       "book-link": "https://www.llyfrgell.cymru/darganfod-dysgu/arddangosfeydd-arlein/llawysgrifau/cyfnod-modern/llyfr-cofio-cenedlaethol-cymru",
-      "temple-of-peace-history": "https://cymru.global/cy/ein-gwaith/teml-heddwch/hanes-teml-heddwch-ac-iechyd/"
+      "temple-of-peace-history": "https://cymru.global/cy/ein-gwaith/teml-heddwch/hanes-teml-heddwch-ac-iechyd/",
+      "tfw-app-link": "https://trc.cymru/ffyrdd-o-deithio/rheilffordd/prynu-tocynnau/ap",
+      "tfw-journey-planner-link": "https://trc.cymru/cynllunio-taith"
     },
     "title": "Lleoliad | Anthony a Lloyd",
     "temple-heading": "Y Deml Heddwch",
@@ -40,7 +42,7 @@
     "parking-st-davids": "20 munud o gerdded. 2,000 lle. <priceLink>Gweld prisiau.</priceLink>",
     "parking-john-lewis": "20 munud o gerdded. 550 lle. <priceLink>Gweld prisiau.</priceLink>",
     "trains-heading": "Gorsafoedd Trenau",
-    "trains-intro": "Lawrlwythwch <appLink>ap Trafnidiaeth Cymru (TfW)</appLink> neu defnyddiwch <websiteLink>gwefan TfW</websiteLink> i gynllunio eich taith, prynu tocynnau a gwirio amseroedd trenau.",
+    "trains-intro": "Lawrlwythwch <tfwAppLink>ap Trafnidiaeth Cymru (TfW)</tfwAppLink> neu defnyddiwch <tfwJourneyPlannerLink>gwefan TfW</tfwJourneyPlannerLink> i gynllunio eich taith, prynu tocynnau a gwirio amseroedd trenau.",
     "trains-cathays": "10 munud o gerdded.",
     "trains-queen-street": "20 munud o gerdded.",
     "trains-central": "25 munud o gerdded.",

@@ -222,13 +222,13 @@ export default async function VenuePage() {
       <h3>{t("venue.trains-heading")}</h3>
       <p>
         {t.rich("venue.trains-intro", {
-          appLink: (chunks) => (
-            <a href="https://tfw.wales/ways-to-travel/rail/buy-tickets/app" target="_blank" rel="noopener noreferrer">
+          tfwAppLink: (chunks) => (
+            <a href={t("venue.links.tfw-app-link")} target="_blank" rel="noopener noreferrer">
               {chunks}
             </a>
           ),
-          websiteLink: (chunks) => (
-            <a href="https://tfw.wales/plan-a-journey" target="_blank" rel="noopener noreferrer">
+          tfwJourneyPlannerLink: (chunks) => (
+            <a href={t("venue.links.tfw-journey-planner-link")} target="_blank" rel="noopener noreferrer">
               {chunks}
             </a>
           ),

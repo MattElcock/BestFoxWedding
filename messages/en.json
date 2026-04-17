@@ -19,7 +19,9 @@
   "venue": {
     "links": {
       "book-link": "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/the-welsh-national-book-of-remembrance",
-      "temple-of-peace-history": "https://templeofpeace.wales/en/history"
+      "temple-of-peace-history": "https://templeofpeace.wales/en/history",
+      "tfw-app-link": "https://tfw.wales/ways-to-travel/rail/buy-tickets/app",
+      "tfw-journey-planner-link": "https://tfw.wales/plan-a-journey"
     },
     "title": "Venue | Anthony & Lloyd",
     "temple-heading": "The Temple of Peace",
@@ -40,7 +42,7 @@
     "parking-st-davids": "20 min walk. 2,000 spaces. <priceLink>See prices.</priceLink>",
     "parking-john-lewis": "20 min walk. 550 spaces. <priceLink>See prices.</priceLink>",
     "trains-heading": "Train Stations",
-    "trains-intro": "Download the <appLink>Transport for Wales (TfW) App</appLink> or use the <websiteLink>TfW website</websiteLink> to plan your journey, buy tickets and check train times.",
+    "trains-intro": "Download the <tfwAppLink>Transport for Wales (TfW) App</tfwAppLink> or use the <tfwJourneyPlannerLink>TfW website</tfwJourneyPlannerLink> to plan your journey, buy tickets and check train times.",
     "trains-cathays": "10 min walk.",
     "trains-queen-street": "20 min walk.",
     "trains-central": "25 min walk.",
