@@ -9,11 +9,10 @@ export default async function Home() {
     <div className="page-home">
       <h1>
         <Image
-          width={60}
-          height={60}
+          width={45}
+          height={45}
           src="/images/cats.svg"
           alt="Art Deco Cats"
-          style={{ marginBottom: "0.5rem" }}
         />
         <span>{t("home.hello-gorgeous")}</span>
         {t("home.you-are-invited")}
@@ -21,7 +20,7 @@ export default async function Home() {
       <h2>
         <span>{t("home.the-wedding-of")}</span>
         {t("common.anthony-fox")}
-        <br />&<br />
+          <span>&</span>
         {t("common.lloyd-best")}
       </h2>
       <p>

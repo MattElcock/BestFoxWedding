@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./reset.css";
 import "./globals.css";
-import { Cinzel_Decorative, Dancing_Script, Roboto } from "next/font/google";
+import { Cinzel_Decorative } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -12,18 +12,6 @@ const cinzelDecorative = Cinzel_Decorative({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-cinzel-decorative",
-});
-
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-dancing-script",
-});
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-roboto",
 });
 
 export const metadata: Metadata = {
@@ -43,7 +31,7 @@ export default async function RootLayout({ params, children }: Props) {
   return (
     <html
       lang={locale}
-      className={`${cinzelDecorative.variable} ${dancingScript.variable} ${roboto.variable}`}
+      className={`${cinzelDecorative.variable}`}
     >
       <body>
         <NextIntlClientProvider>
