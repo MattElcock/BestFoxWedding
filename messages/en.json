@@ -17,7 +17,36 @@
     "the-wedding-of": "The wedding of"
   },
   "venue": {
-    "title": "Venue | Anthony & Lloyd"
+    "links": {
+      "book-link": "https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/the-welsh-national-book-of-remembrance",
+      "temple-of-peace-history": "https://templeofpeace.wales/en/history"
+    },
+    "title": "Venue | Anthony & Lloyd",
+    "temple-heading": "The Temple of Peace",
+    "image-alt": "Temple of Peace",
+    "para-history-1": "Built in 1938, the Temple of Peace is a memorial to those who died in the First World War and home to the <bookLink>Welsh Book of Remembrance</bookLink>, which contains the names of over 35,000 people who died in the conflict.",
+    "para-history-2": "Once open, it became the headquarters of two significant Welsh organisations. In the Health Wing, the <wnmaLink>Welsh National Memorial Association</wnmaLink> helped eradicate tuberculosis in Wales. In the Peace Wing, the <wlnuLink>Welsh League of Nations Union</wlnuLink> supported the Welsh in campaigning for international cooperation and peace.",
+    "para-history-3": "Its founder, <daviesLink>Lord David Davies of Llandinam</daviesLink>, hoped it would become a place of pilgrimage to everyone in search of justice, health and peace.",
+    "find-out-more": "Find out more.",
+    "getting-here": "Getting Here",
+    "address-heading": "Address",
+    "parking-heading": "Parking",
+    "parking-king-edward": "1 min walk. On street. <priceLink>See prices.</priceLink>",
+    "parking-college-road": "1 min walk. On street. <priceLink>See prices.</priceLink>",
+    "parking-castle-mews": "6 min walk. 48 spaces. <priceLink>See prices.</priceLink>",
+    "parking-north-road": "9 min walk. 189 spaces. <priceLink>See prices.</priceLink>",
+    "parking-sophia-gardens": "13 min walk. 284 spaces. <priceLink>See prices.</priceLink>",
+    "parking-capitol": "17 min walk. 388 spaces. <priceLink>See prices.</priceLink>",
+    "parking-st-davids": "20 min walk. 2,000 spaces. <priceLink>See prices.</priceLink>",
+    "parking-john-lewis": "20 min walk. 550 spaces. <priceLink>See prices.</priceLink>",
+    "trains-heading": "Train Stations",
+    "trains-intro": "Download the <appLink>Transport for Wales (TfW) App</appLink> or use the <websiteLink>TfW website</websiteLink> to plan your journey, buy tickets and check train times.",
+    "trains-cathays": "10 min walk.",
+    "trains-queen-street": "20 min walk.",
+    "trains-central": "25 min walk.",
+    "buses-heading": "Buses and Coaches",
+    "buses-intro": "There are several bus stops near the venue. The closest is <stopLink>College Road RK on North Road</stopLink>. Download the <appLink>Cardiff Bus app</appLink> or use the <websiteLink>Cardiff Bus website</websiteLink> to plan your journey, buy tickets and check bus times.",
+    "coach-station-label": "The nearest coach station is:"
   },
   "rsvp": {
     "title": "RSVP | Anthony & Lloyd"

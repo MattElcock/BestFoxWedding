@@ -11,74 +11,78 @@ export async function generateMetadata(): Promise<Metadata> {
   }
 }
 
-export default function venue() {
+export default async function VenuePage() {
+  const t = await getTranslations();
+
   return (
     <>
       <Image
         className="venue-image"
         src="/images/temple-of-peace.jpg"
-        alt="Temple of Peace"
+        alt={t("venue.image-alt")}
         width={1080}
         height={753}
       />
-      <h1>The Temple of Peace</h1>
+      <h1>{t("venue.temple-heading")}</h1>
       <p>
-        Built in 1938, the Temple of Peace is a memorial to those who died in
-        the First World War and home to the{" "}
+        {t.rich("venue.para-history-1", {
+          bookLink: (chunks) => (
+            <a
+              href={t("venue.links.book-link")}
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              {chunks}
+            </a>
+          ),
+        })}
+      </p>
+      <p>
+        {t.rich("venue.para-history-2", {
+          wnmaLink: (chunks) => (
+            <a
+              href="https://www.wcia.org.uk/wnma/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              {chunks}
+            </a>
+          ),
+          wlnuLink: (chunks) => (
+            <a
+              href="https://www.wcia.org.uk/wlnu/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              {chunks}
+            </a>
+          ),
+        })}
+      </p>
+      <p>
+        {t.rich("venue.para-history-3", {
+          daviesLink: (chunks) => (
+            <a
+              href="https://www.wcia.org.uk/wcia-news/wcia-history/david-davies-75-father-of-the-temple-of-peace/"
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              {chunks}
+            </a>
+          ),
+        })}
+      </p>
+      <p>
         <a
-          href="https://www.library.wales/discover-learn/digital-exhibitions/manuscripts/modern-period/the-welsh-national-book-of-remembrance"
+          href={t('venue.links.temple-of-peace-history')}
           target="_blank"
           referrerPolicy="no-referrer"
         >
-          Welsh Book of Rememberance
+          {t("venue.find-out-more")}
         </a>
-        , which contains the names of over 35,000 people who died in the
-        conflict.
       </p>
-      <p>
-        Once open, it became the headquarters of two significant Welsh
-        organisations. In the Health Wing, the{" "}
-        <a
-          href="https://www.wcia.org.uk/wnma/"
-          target="_blank"
-          referrerPolicy="no-referrer"
-        >
-          Welsh National Memorial Association
-        </a>{" "}
-        helped eradicate tuberculosis in Wales. In the Peace Wing, the{" "}
-        <a
-          href="https://www.wcia.org.uk/wlnu/"
-          target="_blank"
-          referrerPolicy="no-referrer"
-        >
-          Welsh League of Nations Union
-        </a>{" "}
-        supported the Welsh in campaigning for international cooperation and
-        peace.
-      </p>
-      <p>
-        Its founder,{" "}
-        <a
-          href="https://www.wcia.org.uk/wcia-news/wcia-history/david-davies-75-father-of-the-temple-of-peace/"
-          target="_blank"
-          referrerPolicy="no-referrer"
-        >
-          Lord David Davies of Llandinam
-        </a>
-        , hoped it would become a place of pilgramage to everyone in search of
-        justice, health and peace.
-      </p>
-      <p>
-        <a
-          href="https://templeofpeace.wales/en/history"
-          target="_blank"
-          referrerPolicy="no-referrer"
-        >
-          Find out more.
-        </a>
-      </p>
-      <h2>Getting Here</h2>
-      <h3>Address</h3>
+      <h2>{t("venue.getting-here")}</h2>
+      <h3>{t("venue.address-heading")}</h3>
       <address>
         Temple of Peace, <br />
         King Edward VII Ave, <br />
@@ -93,245 +97,187 @@ export default function venue() {
         allowFullScreen
         loading="lazy"
       ></iframe>
-      <h3>Parking</h3>
+      <h3>{t("venue.parking-heading")}</h3>
       <dl>
         <dt>
-          <a
-            href="https://maps.app.goo.gl/8J5b9M1c8qj5AqvF8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/8J5b9M1c8qj5AqvF8" target="_blank" rel="noopener noreferrer">
             King Edward VII Avenue - CF10 3DN
           </a>
         </dt>
         <dd>
-          1 min walk. On street.{" "}
-          <a
-            href="https://en.parkopedia.co.uk/parking/meter/king_edward_vii_avenue/cf10/cardiff"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-king-edward", {
+            priceLink: (chunks) => (
+              <a href="https://en.parkopedia.co.uk/parking/meter/king_edward_vii_avenue/cf10/cardiff" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/vaYrCH9xpSHsqvwx6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/vaYrCH9xpSHsqvwx6" target="_blank" rel="noopener noreferrer">
             College Road - CF10 3AP
           </a>
         </dt>
         <dd>
-          1 min walk. On street.{" "}
-          <a
-            href="https://en.parkopedia.co.uk/parking/meter/college_road/cf10/cardiff"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-college-road", {
+            priceLink: (chunks) => (
+              <a href="https://en.parkopedia.co.uk/parking/meter/college_road/cf10/cardiff" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/TX8LpQdJLCvG7GC98"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/TX8LpQdJLCvG7GC98" target="_blank" rel="noopener noreferrer">
             Castle Mews - CF10 3ER
           </a>
         </dt>
         <dd>
-          6 min walk. 48 spaces.{" "}
-          <a
-            href="https://www.visitcardiff.com/highlights/castle-mews-car-park/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-castle-mews", {
+            priceLink: (chunks) => (
+              <a href="https://www.visitcardiff.com/highlights/castle-mews-car-park/" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/5xFohQAv6ryJDHGRA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/5xFohQAv6ryJDHGRA" target="_blank" rel="noopener noreferrer">
             North Road - CF10 3DU
           </a>
         </dt>
         <dd>
-          9 min walk. 189 spaces.{" "}
-          <a
-            href="https://www.visitcardiff.com/highlights/north-road-car-park/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-north-road", {
+            priceLink: (chunks) => (
+              <a href="https://www.visitcardiff.com/highlights/north-road-car-park/" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/R4hDKG3nLnmg6Gg79"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/R4hDKG3nLnmg6Gg79" target="_blank" rel="noopener noreferrer">
             Sophia Gardens - CF11 9FH
           </a>
         </dt>
         <dd>
-          13 min walk. 284 spaces.{" "}
-          <a
-            href="https://www.visitcardiff.com/highlights/sophia-gardens-car-park/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-sophia-gardens", {
+            priceLink: (chunks) => (
+              <a href="https://www.visitcardiff.com/highlights/sophia-gardens-car-park/" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/dWEXBXmJqWiGNPdF8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/dWEXBXmJqWiGNPdF8" target="_blank" rel="noopener noreferrer">
             Capitol Shopping Centre - N Edward St CF10 2HH
           </a>
         </dt>
         <dd>
-          17 min walk. 388 spaces.{" "}
-          <a
-            href="https://capitolcardiff.co.uk/plan-your-visit/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-capitol", {
+            priceLink: (chunks) => (
+              <a href="https://capitolcardiff.co.uk/plan-your-visit/" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/jizCsRa265K6w2gt8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/jizCsRa265K6w2gt8" target="_blank" rel="noopener noreferrer">
             St David's Dewi Sant - Mary Ann St CF10 2EN
           </a>
         </dt>
         <dd>
-          20 min walk. 2,000 spaces.{" "}
-          <a
-            href="https://www.stdavidscardiff.com/en/plan-my-visit/parking"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-st-davids", {
+            priceLink: (chunks) => (
+              <a href="https://www.stdavidscardiff.com/en/plan-my-visit/parking" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
 
         <dt>
-          <a
-            href="https://maps.app.goo.gl/UVbGLkaTMP3CqZKk9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/UVbGLkaTMP3CqZKk9" target="_blank" rel="noopener noreferrer">
             John Lewis - Hayes Bridge Rd CF10 1EG
           </a>
         </dt>
         <dd>
-          20 min walk. 550 spaces.{" "}
-          <a
-            href="https://www.stdavidscardiff.com/en/plan-my-visit/parking"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            See prices.
-          </a>
+          {t.rich("venue.parking-john-lewis", {
+            priceLink: (chunks) => (
+              <a href="https://www.stdavidscardiff.com/en/plan-my-visit/parking" target="_blank" rel="noopener noreferrer">
+                {chunks}
+              </a>
+            ),
+          })}
         </dd>
       </dl>
-      <h3>Train Stations</h3>
+      <h3>{t("venue.trains-heading")}</h3>
       <p>
-        Download the{" "}
-        <a
-          href="https://tfw.wales/ways-to-travel/rail/buy-tickets/app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Transport for Wales (TfW) App
-        </a>{" "}
-        or use the{" "}
-        <a
-          href="https://tfw.wales/plan-a-journey"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          TfW website
-        </a>{" "}
-        to plan your journey, buy tickets and check train times.
+        {t.rich("venue.trains-intro", {
+          appLink: (chunks) => (
+            <a href="https://tfw.wales/ways-to-travel/rail/buy-tickets/app" target="_blank" rel="noopener noreferrer">
+              {chunks}
+            </a>
+          ),
+          websiteLink: (chunks) => (
+            <a href="https://tfw.wales/plan-a-journey" target="_blank" rel="noopener noreferrer">
+              {chunks}
+            </a>
+          ),
+        })}
       </p>
       <dl>
         <dt>
-          <a
-            href="https://maps.app.goo.gl/ZJWzSWUkn2wSK1kL6"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/ZJWzSWUkn2wSK1kL6" target="_blank" rel="noopener noreferrer">
             Cathays
           </a>
         </dt>
-        <dd>10 min walk.</dd>
+        <dd>{t("venue.trains-cathays")}</dd>
         <dt>
-          <a
-            href="https://maps.app.goo.gl/b4m6yKhCGWRVbbms8"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/b4m6yKhCGWRVbbms8" target="_blank" rel="noopener noreferrer">
             Cardiff Queen Street
           </a>
         </dt>
-        <dd>20 min walk.</dd>
+        <dd>{t("venue.trains-queen-street")}</dd>
         <dt>
-          <a
-            href="https://maps.app.goo.gl/zA8GVnrVnc49raCQA"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://maps.app.goo.gl/zA8GVnrVnc49raCQA" target="_blank" rel="noopener noreferrer">
             Cardiff Central
           </a>
         </dt>
-        <dd>25 min walk.</dd>
+        <dd>{t("venue.trains-central")}</dd>
       </dl>
-      <h3>Buses and Coaches</h3>
+      <h3>{t("venue.buses-heading")}</h3>
       <p>
-        There are several bus stops near the venue. The closest is{" "}
-        <a
-          href="https://www.cardiffbus.com/stops/5710AWA11117"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          College Road RK on North Road
-        </a>
-        . Download the{" "}
-        <a href="https://www.cardiffbus.com/app">Cardiff Bus app</a> or use the{" "}
-        <a
-          href="https://www.cardiffbus.com/plan-a-journey"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Cardiff Bus website
-        </a>{" "}
-        to plan your journey, buy tickets and check bus times.
+        {t.rich("venue.buses-intro", {
+          stopLink: (chunks) => (
+            <a href="https://www.cardiffbus.com/stops/5710AWA11117" target="_blank" rel="noopener noreferrer">
+              {chunks}
+            </a>
+          ),
+          appLink: (chunks) => (
+            <a href="https://www.cardiffbus.com/app">
+              {chunks}
+            </a>
+          ),
+          websiteLink: (chunks) => (
+            <a href="https://www.cardiffbus.com/plan-a-journey" target="_blank" rel="noopener noreferrer">
+              {chunks}
+            </a>
+          ),
+        })}
       </p>
-      <p>The nearest coach station is:</p>
+      <p>{t("venue.coach-station-label")}</p>
       <address>
         Cardiff Coach Station <br />
-        Sophia Gardsens <br />
+        Sophia Gardens <br />
         Cardiff <br />
         CF11 9HW
       </address>

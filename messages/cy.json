@@ -17,7 +17,36 @@
     "the-wedding-of": "Priodas"
   },
   "venue": {
-    "title": "Lleoliad | Anthony a Lloyd"
+    "links": {
+      "book-link": "https://www.llyfrgell.cymru/darganfod-dysgu/arddangosfeydd-arlein/llawysgrifau/cyfnod-modern/llyfr-cofio-cenedlaethol-cymru",
+      "temple-of-peace-history": "https://cymru.global/cy/ein-gwaith/teml-heddwch/hanes-teml-heddwch-ac-iechyd/"
+    },
+    "title": "Lleoliad | Anthony a Lloyd",
+    "temple-heading": "Y Deml Heddwch",
+    "image-alt": "Y Deml Heddwch",
+    "para-history-1": "Adeiladwyd ym 1938, mae'r Deml Heddwch yn gofeb i'r rhai a fu farw yn y Rhyfel Byd Cyntaf ac yn gartref i'r <bookLink>Llyfr Coffa Cenedlaethol Cymru</bookLink>, sy'n cynnwys enwau dros 35,000 o bobl a fu farw yn y gwrthdaro.",
+    "para-history-2": "Wedi agor, daeth yn bencadlys i ddwy sefydliad Cymreig arwyddocaol. Yn yr Adain Iechyd, helpodd <wnmaLink>Cymdeithas Coffa Cenedlaethol Cymru</wnmaLink> i ddileu'r diciâu yng Nghymru. Yn yr Adain Heddwch, cefnogodd <wlnuLink>Undeb Cynghrair y Cenhedloedd Cymru</wlnuLink> y Cymry i ymgyrchu dros gydweithrediad a heddwch rhyngwladol.",
+    "para-history-3": "Roedd ei sylfaenydd, <daviesLink>Arglwydd David Davies o Landinam</daviesLink>, yn gobeithio y byddai'n dod yn fan pererindod i bawb yn chwilio am gyfiawnder, iechyd a heddwch.",
+    "find-out-more": "Darganfyddwch fwy.",
+    "getting-here": "Cyrraedd Yma",
+    "address-heading": "Cyfeiriad",
+    "parking-heading": "Parcio",
+    "parking-king-edward": "1 munud o gerdded. Ar y stryd. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-college-road": "1 munud o gerdded. Ar y stryd. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-castle-mews": "6 munud o gerdded. 48 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-north-road": "9 munud o gerdded. 189 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-sophia-gardens": "13 munud o gerdded. 284 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-capitol": "17 munud o gerdded. 388 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-st-davids": "20 munud o gerdded. 2,000 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "parking-john-lewis": "20 munud o gerdded. 550 lle. <priceLink>Gweld prisiau.</priceLink>",
+    "trains-heading": "Gorsafoedd Trenau",
+    "trains-intro": "Lawrlwythwch <appLink>ap Trafnidiaeth Cymru (TfW)</appLink> neu defnyddiwch <websiteLink>gwefan TfW</websiteLink> i gynllunio eich taith, prynu tocynnau a gwirio amseroedd trenau.",
+    "trains-cathays": "10 munud o gerdded.",
+    "trains-queen-street": "20 munud o gerdded.",
+    "trains-central": "25 munud o gerdded.",
+    "buses-heading": "Bysiau a Choetsys",
+    "buses-intro": "Mae sawl arhosfan bws yn agos i'r lleoliad. Yr agosaf yw <stopLink>College Road RK ar North Road</stopLink>. Lawrlwythwch <appLink>ap Cardiff Bus</appLink> neu defnyddiwch <websiteLink>gwefan Cardiff Bus</websiteLink> i gynllunio eich taith, prynu tocynnau a gwirio amseroedd bysiau.",
+    "coach-station-label": "Yr orsaf coetsis agosaf yw:"
   },
   "rsvp": {
     "title": "RSVP | Anthony a Lloyd"
