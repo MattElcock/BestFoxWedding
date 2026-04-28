@@ -6,15 +6,14 @@
     "wedding-date": "Dydd Gwener 28 Ebrill 2028",
     "rsvp": "RSVP",
     "venue": "Lleoliad",
-    "information": "Gwybodaeth",
     "english": "English",
     "cymraeg": "Cymraeg"
   },
   "home": {
     "title": "Cartref | Anthony a Lloyd",
-    "hello-gorgeous": "Shwmae hardd",
-    "you-are-invited": "Rydych chi wedi eich gwahodd",
-    "the-wedding-of": "Priodas"
+    "hello-gorgeous": "Shwmae hyfryd",
+    "you-are-invited": "Rydych chi wedi'ch gwahodd i",
+    "the-wedding-of": "Briodas"
   },
   "venue": {
     "links": {

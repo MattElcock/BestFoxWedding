@@ -6,7 +6,6 @@
     "wedding-date": "Friday 28 April 2028",
     "rsvp": "RSVP",
     "venue": "Venue",
-    "information": "Information",
     "english": "English",
     "cymraeg": "Cymraeg"
   },
@@ -14,7 +13,7 @@
     "title": "Home | Anthony & Lloyd",
     "hello-gorgeous": "Hello gorgeous",
     "you-are-invited": "You're invited",
-    "the-wedding-of": "The wedding of"
+    "the-wedding-of": "To the wedding of"
   },
   "venue": {
     "links": {

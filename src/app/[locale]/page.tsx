@@ -44,10 +44,6 @@ export default async function Page() {
                 <Link href="/venue" className="button button-secondary">
                     {t("common.venue")}
                 </Link>
-
-                <Link href="/information" className="button button-secondary">
-                    {t("common.information")}
-                </Link>
             </div>
         </div>
     );
